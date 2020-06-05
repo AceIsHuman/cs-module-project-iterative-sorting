@@ -14,10 +14,18 @@ def selection_sort(arr):
     return arr
 
 
-# TO-DO:  implement the Bubble Sort function below
 def bubble_sort(arr):
-    # Your code here
+    made_a_swap = True
 
+    while made_a_swap:
+        made_a_swap = False
+
+        for i in range(len(arr) - 1):
+            j = i + 1
+
+            if arr[i] > arr[j]:
+                arr[i], arr[j] = arr[j], arr[i]
+                made_a_swap = True
 
     return arr
 
